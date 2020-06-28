@@ -1,0 +1,40 @@
+.box-mh{
+    min-height: 300px;
+}
+
+
+.allign-tocenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yo{
+    text-align: right;
+}
+div{
+    padding: 0px !important;
+}
+#selectfile{
+    display: none;
+}
+.inputLabel {
+    display: inline-block;
+  }
+.noMargin{
+    margin-left: 0px !important;
+     margin-right:0px !important
+  }
+  
+  .box{
+    border: 1px solid black;
+     border-style: dashed;
+     margin: 5px;
+  }
+  .deleteicon{
+    float:right;
+    margin-right: 10px;
+    right: 0px;
+    top:10px;
+    margin-top:10px;
+    position:absolute;
+  }

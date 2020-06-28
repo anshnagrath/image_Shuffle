@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="text-center p-4"> 
+    <p >Assignment For MEAN Stack Dev: </p> 
+  </div>
+  <div>
+    <div class="row mt-1 container-fluid" style="margin-left: 0px !important; margin-right:0px !important">
+      <div   *ngFor="let ind of [0,1,2,3,4,5];let i = index;"  class="col-4 box-mh" >
+        <div class="box">
+          <div> <span class="deleteicon" (click)="resetInput(ind)" ><i class="fa fa-trash fa-2x" ></i></span> </div>
+            <div  class="allign-tocenter text-center box-mh" [ngStyle]="{'background-image':this.allFiles[ind]}" >
+               <label id="inputLabel" (click)="setSelectedIndex(i)" for="selectfile">Select File </label>
+               <input  id="selectfile" class="fileinput" accept="image/*" type="file" (change)="setBackground($event,$event.target.files,ind)"/>
+            </div>
+          </div>
+       </div>
+    </div>
+  </div>
+</div>
